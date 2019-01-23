@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Logga in | Acedu</title>
+    
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
     <style>
         .wrapper {
             position: relative;
@@ -11,8 +14,13 @@
             width: 400px;
             height: 400px;
             text-align: center;
-            padding: 30px;
+            padding-bottom: 40px;
             font-family: Muli;
+            color: #333;
+            background-color: #FFFDFA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .logo {
@@ -20,19 +28,88 @@
             left:-57px;
             top:-57px;
         }
-      
+
+        h1 {
+            margin-top: 0;
+            color: #4d4d4d;
+        }
+
         .intro h2 {
             display: none;
         }
+        
+        #api button {
+            border: 1px solid #ccc;
+            background: white;
+            padding: 10px 0px 10px 47px;
+            margin-bottom: 10px;
+            width: 175px;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Muli;
+            transition: 300ms color;
+            font-size: 16px;
+        }
+
+        #api button:before {
+            font-family: "Font Awesome 5 Brands";
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0 16px;
+            line-height: 40px;
+            border-right: 1px solid #ccc;
+            height: 100%;
+            font-size: 17px;
+            transition: 300ms background-color;
+        }
+
+        #GoogleExchange:before {
+            color: #D62D20;
+            content: "\f1a0";
+        }
+
+        #GoogleExchange:hover {
+            color: #D62D20;
+        }
+
+        #GoogleExchange:hover:before {
+            background-color: #fceae9;
+        }
+
+        #MicrosoftAccountExchange:before {
+            color: #04A5F0;
+            content: "\f3ca";
+        }
+
+        #MicrosoftAccountExchange:hover {
+            color: #04A5F0;
+        }
+
+        #MicrosoftAccountExchange:hover:before {
+            background-color: #e6f7ff;
+        }
+
+        .options {
+            margin-top: 30px;
+        }
+
+        .options > div {
+            /* display: inline-block; */
+            margin-left: 10px;
+        }
+
     </style>
 
   </head>
   <body>
       <div class='wrapper'>
         <img class='logo' src="https://www.acedu.se/Content/images/acedu-logo.png" />
+            <div>
             <h1>Välj inloggningsmetod</h1>
-            <div id="api">
-            </div>   <!-- Leave this element empty because Azure AD B2C will insert content here. -->
-      </wrapper>
+            <div id="api"></div>  <!-- Leave this element empty because Azure AD B2C will insert content here. -->
+        </div>
+    </div>
   </body>
 </html>
