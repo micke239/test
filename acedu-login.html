@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logga in | Acedu</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <style>
+        .wrapper {
+            position: relative;
+            border: 3px solid #daa520;
+            margin: 100px auto;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            padding: 30px;
+            font-family: Muli;
+        }
+
+        .logo {
+            position:absolute;
+            left:-57px;
+            top:-57px;
+        }
+    </style>
+
+  </head>
+  <body>
+      <div class='wrapper'>
+        <img class='logo' src="https://www.acedu.se/Content/images/acedu-logo.png" />
+            <h1>Välj inloggningsmetod</h1>
+            <div id="api">
+                <div class="social" aria-label="Sign in with your social account" role="form">
+                    <div class="intro">
+                        <h2>Sign in with your social account</h2>
+                    </div>
+                    <div class="options">
+                        <div>
+                        <button class="accountButton firstButton" id="MicrosoftAccountExchange" tabindex="1">Microsoft Inloggning</button>
+                        </div>
+                        <div>
+                        <button class="accountButton" id="GoogleExchange" tabindex="1">Google</button>
+                        </div>
+                    </div>
+                </div>
+            </div>   <!-- Leave this element empty because Azure AD B2C will insert content here. -->
+      </wrapper>
+  </body>
+</html>
