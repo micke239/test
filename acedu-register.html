@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+    <title>Användarinformation | Acedu</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <style>
+        .wrapper {
+            position: relative;
+            border: 3px solid #daa520;
+            margin: 100px auto;
+            width: 450px;
+            height: 500px;
+            padding-bottom: 40px;
+            font-family: Muli;
+            color: #333;
+            background-color: #FFFDFA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            position:absolute;
+            left:-57px;
+            top:-57px;
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #4d4d4d;
+        }
+
+        .intro {
+            display: none;
+        }
+        
+        .error {
+            color: red;
+        }
+
+        .error p {
+            margin: 0;
+        }
+        
+        .TextBox {
+            margin-bottom:10px;
+        }
+
+        #api button {
+            border: 1px solid #ccc;
+            background: white;
+            padding: 10px 20px 10px 20px;
+            margin-bottom: 10px;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Muli;
+            transition: 300ms background-color;
+            font-size: 16px;
+        }
+
+        #api button:hover {
+            background-color: #fafafa;
+        }
+
+        ul {
+            list-style: none;
+            text-align: left;
+            padding-left: 0;
+            margin-bottom: 25px;
+        }
+
+        .tiny {
+            display: none;
+        }
+    </style>
+
+  </head>
+  <body>
+      <div class='wrapper'>
+        <img class='logo' src="https://www.acedu.se/Content/images/acedu-logo.png" />
+            <div>
+            <h1>Användarinformation</h1>
+            <div id="api"></div>
+        </div>
+    </div>
+  </body>
+</html>
